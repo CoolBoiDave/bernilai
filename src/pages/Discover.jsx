@@ -18,7 +18,7 @@ export default function DiscoverPage() {
 			const filename = localStorage.getItem("file");
 
 			const response = await fetch(
-				"http://localhost:5000/search/basic_info",
+				"https://bernilai-api.dave-wilson.com/search/basic_info",
 				{
 					method: "POST",
 					headers: {
@@ -55,7 +55,7 @@ export default function DiscoverPage() {
 					const lon = pos.coords.longitude;
 
 					const response = await fetch(
-						"http://localhost:5000/search/scan/scan",
+						"https://bernilai-api.dave-wilson.com/search/scan/scan",
 						{
 							method: "POST",
 							headers: {
@@ -85,17 +85,20 @@ export default function DiscoverPage() {
 
 	async function verifyPanti(panti) {
 		setVerifying(true);
-		const response = await fetch("http://localhost:5000/search/validate", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				lat: panti.latitude,
-				lon: panti.longitude,
-				fname: panti.title,
-			}),
-		});
+		const response = await fetch(
+			"https://bernilai-api.dave-wilson.com/search/validate",
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					lat: panti.latitude,
+					lon: panti.longitude,
+					fname: panti.title,
+				}),
+			}
+		);
 
 		const resData = await response.json();
 		setVerified(
@@ -108,7 +111,7 @@ export default function DiscoverPage() {
 
 	async function socialseek(panti) {
 		const response = await fetch(
-			"http://localhost:5000/search/socialseek",
+			"https://bernilai-api.dave-wilson.com/search/socialseek",
 			{
 				method: "POST",
 				headers: {
@@ -127,16 +130,19 @@ export default function DiscoverPage() {
 	}
 
 	async function searchAI(panti) {
-		const response = await fetch("http://localhost:5000/search/ai_osint", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				address: panti.address,
-				fname: panti.title,
-			}),
-		});
+		const response = await fetch(
+			"https://bernilai-api.dave-wilson.com/search/ai_osint",
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					address: panti.address,
+					fname: panti.title,
+				}),
+			}
+		);
 
 		const resData = await response.json();
 		setAiresults(resData);

@@ -134,8 +134,8 @@ export async function action({ request }) {
 
 	const url =
 		data.get("mode") == "login"
-			? "http://localhost:5000/login/"
-			: "http://localhost:5000/signup";
+			? "https://bernilai-api.dave-wilson.com/login/"
+			: "https://bernilai-api.dave-wilson.com/signup";
 
 	const response = await fetch(url, {
 		method: "POST",
