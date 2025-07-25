@@ -1,0 +1,82 @@
+.optionsContainer {
+	opacity: 0.85;
+	background-color: #fff;
+	border-radius: 30px;
+	width: 760px;
+	height: 518px;
+	position: absolute;
+	top: 30px;
+	left: 808px;
+	box-shadow: 9px -21px 18.4px #00000040;
+}
+
+.questionText {
+	color: #21a652;
+	width: 670px;
+	height: 107px;
+	font: italic 700 36px Poppins;
+	position: absolute;
+	top: 36px;
+	left: 30px;
+}
+
+.errorMessage {
+	color: #f04040;
+	width: 411px;
+	height: 47px;
+	font: italic 700 32px Poppins;
+	position: absolute;
+	top: 180px;
+	left: 30px;
+}
+
+.checkboxGroup {
+	backdrop-filter: blur(4px);
+	background-color: #fffffffc;
+	border-radius: 16px;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 343px;
+	height: 228px;
+	padding: 8px;
+	display: flex;
+	position: absolute;
+	top: 230px;
+	left: 30px;
+	box-shadow: 0 32px 32px -24px #0000001a;
+}
+
+@media (width <= 991px) {
+	.checkboxGroup {
+		width: 90%;
+		top: 980px;
+		left: 5%;
+	}
+}
+
+.deliveryAnimation {
+	justify-content: center;
+	align-items: center;
+	width: 263px;
+	height: 263px;
+	display: flex;
+	position: absolute;
+	top: 203px;
+	left: 1229px;
+}
+
+@media (width <= 991px) {
+	.deliveryAnimation {
+		top: 1200px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.deliveryImage {
+	width: 263px;
+	height: 263px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

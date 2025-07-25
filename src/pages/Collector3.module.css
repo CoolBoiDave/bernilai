@@ -1,0 +1,519 @@
+.collector3 {
+	background-color: #094625;
+	width: 100vw;
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.backgroundImage {
+	object-fit: cover;
+	opacity: 1;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 6.5%;
+	left: 0;
+}
+
+.topAnimationPlaceholder {
+	width: 58.9%;
+	height: 29%;
+	position: absolute;
+	top: 12.9%;
+	left: 19.2%;
+}
+
+/* Navigation Styles */
+.navigation {
+	width: 100%;
+	height: 146px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+@media (width <= 991px) {
+	.navigation {
+		height: 120px;
+	}
+}
+
+@media (width <= 640px) {
+	.navigation {
+		height: 80px;
+	}
+}
+
+.navigationBackground {
+	background-color: #9cc97f;
+	width: 100%;
+	height: 146px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (width <= 991px) {
+	.navigationBackground {
+		height: 120px;
+	}
+}
+
+@media (width <= 640px) {
+	.navigationBackground {
+		height: 80px;
+	}
+}
+
+.logo {
+	width: 215px;
+	height: 121px;
+	position: absolute;
+	top: 15px;
+	left: 44px;
+}
+
+@media (width <= 991px) {
+	.logo {
+		width: 150px;
+		height: 85px;
+		top: 20px;
+		left: 20px;
+	}
+}
+
+@media (width <= 640px) {
+	.logo {
+		width: 120px;
+		height: 68px;
+		top: 6px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+
+.profileSection {
+	align-items: center;
+	width: 169px;
+	height: 35px;
+	display: flex;
+	position: absolute;
+	top: 58px;
+	right: 156px;
+}
+
+@media (width <= 991px) {
+	.profileSection {
+		top: 45px;
+		right: 20px;
+	}
+}
+
+@media (width <= 640px) {
+	.profileSection {
+		display: none;
+	}
+}
+
+.profileText {
+	color: #183d10;
+	text-align: center;
+	letter-spacing: 0.5px;
+	margin: 12px 0 0 -6px;
+	font: 700 36px/16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (width <= 991px) {
+	.profileText {
+		font-size: 24px;
+	}
+}
+
+.homeSection {
+	align-items: center;
+	width: 166px;
+	height: 32px;
+	display: flex;
+	position: absolute;
+	top: 58px;
+	left: 612px;
+}
+
+@media (width <= 991px) {
+	.homeSection {
+		top: 45px;
+		left: 400px;
+	}
+}
+
+@media (width <= 640px) {
+	.homeSection {
+		display: none;
+	}
+}
+
+.homeText {
+	color: #094625;
+	text-align: center;
+	letter-spacing: 0.5px;
+	margin: 11px 0 0 -10px;
+	font: 700 36px/16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (width <= 991px) {
+	.homeText {
+		font-size: 24px;
+	}
+}
+
+.collectorSection {
+	align-items: center;
+	width: 237px;
+	height: 36px;
+	display: flex;
+	position: absolute;
+	top: 58px;
+	left: 818px;
+}
+
+@media (width <= 991px) {
+	.collectorSection {
+		top: 45px;
+		left: 550px;
+	}
+}
+
+@media (width <= 640px) {
+	.collectorSection {
+		display: none;
+	}
+}
+
+.collectorTextWrapper {
+	width: 215px;
+	height: 16px;
+	margin: 15px 0 0 -13px;
+	position: relative;
+}
+
+.collectorText {
+	color: #094609;
+	text-align: center;
+	letter-spacing: 0.5px;
+	font: 700 36px/16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (width <= 991px) {
+	.collectorText {
+		font-size: 24px;
+	}
+}
+
+.discoverSection {
+	align-items: center;
+	width: 218px;
+	height: 32px;
+	display: flex;
+	position: absolute;
+	top: 65px;
+	left: 1096px;
+}
+
+@media (width <= 991px) {
+	.discoverSection {
+		top: 50px;
+		left: 750px;
+	}
+}
+
+@media (width <= 640px) {
+	.discoverSection {
+		display: none;
+	}
+}
+
+.discoverTextWrapper {
+	width: 189px;
+	height: 16px;
+	margin: 7px 0 0 -2px;
+	position: relative;
+}
+
+.discoverText {
+	color: #094625;
+	text-align: center;
+	letter-spacing: 0.5px;
+	font: 700 36px/16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (width <= 991px) {
+	.discoverText {
+		font-size: 24px;
+	}
+}
+
+/* Congratulations Section Styles */
+.congratulationsSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.formSubmittedTitle {
+	color: #f2fdeb;
+	text-align: center;
+	width: 933px;
+	height: 117px;
+	font: 800 96px Jost, -apple-system, Roboto, Helvetica, sans-serif;
+	position: absolute;
+	top: 282px;
+	left: 50%;
+	transform: translate(-50%);
+	margin: 0;
+}
+
+@media (width <= 991px) {
+	.formSubmittedTitle {
+		width: 80%;
+		font-size: 64px;
+		top: 200px;
+	}
+}
+
+@media (width <= 640px) {
+	.formSubmittedTitle {
+		width: 95%;
+		font-size: 36px;
+		top: 120px;
+	}
+}
+
+.animationContainer {
+	justify-content: center;
+	align-items: center;
+	width: 396px;
+	height: 373px;
+	display: flex;
+	position: absolute;
+	top: 329px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+@media (width <= 991px) {
+	.animationContainer {
+		width: 300px;
+		height: 280px;
+		top: 280px;
+	}
+}
+
+@media (width <= 640px) {
+	.animationContainer {
+		width: 200px;
+		height: 190px;
+		top: 200px;
+	}
+}
+
+.congratulationsAnimation {
+	width: 396px;
+	height: 373px;
+}
+
+@media (width <= 991px) {
+	.congratulationsAnimation {
+		width: 300px;
+		height: 280px;
+	}
+}
+
+@media (width <= 640px) {
+	.congratulationsAnimation {
+		width: 200px;
+		height: 190px;
+	}
+}
+
+.thankYouMessage {
+	color: #e7f9e9;
+	text-align: center;
+	width: 1132px;
+	height: 145px;
+	font: 500 36px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+	position: absolute;
+	top: 702px;
+	left: 50%;
+	transform: translate(-50%);
+	margin: 0;
+}
+
+@media (width <= 991px) {
+	.thankYouMessage {
+		width: 90%;
+		font-size: 24px;
+		top: 550px;
+	}
+}
+
+@media (width <= 640px) {
+	.thankYouMessage {
+		width: 95%;
+		font-size: 18px;
+		top: 400px;
+	}
+}
+
+.noteMessage {
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 4px 4px #00000040;
+	opacity: 0.61;
+	width: 870px;
+	height: 108px;
+	font: 500 24px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+	position: absolute;
+	top: 894px;
+	left: 50%;
+	transform: translate(-50%);
+	margin: 0;
+}
+
+@media (width <= 991px) {
+	.noteMessage {
+		width: 90%;
+		font-size: 18px;
+		top: 700px;
+	}
+}
+
+@media (width <= 640px) {
+	.noteMessage {
+		width: 95%;
+		font-size: 14px;
+		top: 520px;
+	}
+}
+
+.noteHighlight {
+	color: #fa2d2d;
+}
+
+/* Back to Home Button Styles */
+.backToHomeButton {
+	cursor: pointer;
+	width: 420px;
+	height: 100px;
+	position: absolute;
+	top: 1016px;
+	left: 50%;
+	transform: translate(-50%);
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+@media (width <= 991px) {
+	.backToHomeButton {
+		width: 300px;
+		height: 80px;
+		top: 800px;
+	}
+}
+
+@media (width <= 640px) {
+	.backToHomeButton {
+		width: 250px;
+		height: 60px;
+		top: 600px;
+	}
+}
+
+.buttonBackground {
+	background-color: #f5ffc2;
+	border-radius: 30px;
+	width: 420px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (width <= 991px) {
+	.buttonBackground {
+		width: 300px;
+		height: 80px;
+	}
+}
+
+@media (width <= 640px) {
+	.buttonBackground {
+		border-radius: 20px;
+		width: 250px;
+		height: 60px;
+	}
+}
+
+.buttonText {
+	color: #000;
+	text-align: center;
+	width: 252px;
+	height: 54px;
+	font: 500 36px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+	position: absolute;
+	top: 23px;
+	left: 84px;
+}
+
+@media (width <= 991px) {
+	.buttonText {
+		width: auto;
+		font-size: 24px;
+		top: 28px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+
+@media (width <= 640px) {
+	.buttonText {
+		width: auto;
+		font-size: 18px;
+		top: 18px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+
+/* Footer Styles */
+.footer {
+	position: relative;
+}
+
+.footerLogo {
+	opacity: 0.47;
+	width: 255px;
+	height: 75px;
+	position: absolute;
+	top: 1193px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+@media (width <= 991px) {
+	.footerLogo {
+		width: 200px;
+		height: 60px;
+		top: 950px;
+	}
+}
+
+@media (width <= 640px) {
+	.footerLogo {
+		width: 150px;
+		height: 45px;
+		top: 720px;
+	}
+}

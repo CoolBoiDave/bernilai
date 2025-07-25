@@ -1,0 +1,60 @@
+.submitContainer {
+	width: 760px;
+	height: 130px;
+	position: absolute;
+	top: 600px;
+	left: 808px;
+}
+
+.submitButton {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.submitButton:hover {
+	transform: translateY(-2px);
+}
+
+.submitButton:active {
+	transform: translateY(0);
+}
+
+.buttonBackground {
+	width: 760px;
+	height: 130px;
+	fill: #aecfd6;
+	filter: drop-shadow(17px 14px 13.5px rgba(0, 0, 0, 0.25));
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.submitText {
+	color: #fff;
+	width: 277px;
+	height: 60px;
+	font: italic 700 40px Poppins;
+	position: absolute;
+	top: 38px;
+	left: 216px;
+	pointer-events: none;
+}
+
+@media (width <= 991px) {
+	.submitText {
+		font-size: 32px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media (width <= 640px) {
+	.submitText {
+		font-size: 24px;
+	}
+}

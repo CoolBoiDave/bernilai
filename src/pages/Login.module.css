@@ -1,0 +1,222 @@
+.login {
+	overflow: hidden;
+	max-height: 100vh;
+}
+
+/* Background Image */
+.backgroundImage {
+	width: 60%;
+	height: calc(100vh);
+	object-fit: cover;
+}
+
+/* Page Title */
+.pageTitle {
+	color: #094625;
+	font: 700 4.8rem Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+/* Signup Form Styles */
+.signupFormContainer {
+	width: 40%;
+	position: absolute;
+	right: 0;
+	top: 10rem;
+	height: calc(100vh - 10rem);
+	background-color: #d1e9c1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.signupForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
+	gap: 36px;
+}
+
+.inputGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.inputLabel {
+	color: #828282;
+	font: 700 20px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+	margin: 0;
+}
+
+.inputWrapper {
+	border: 1px solid #919191;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	width: calc(100% - 6rem);
+	padding: 1rem 3rem;
+}
+
+.textInput {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #545454;
+	font: 400 14px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+	width: 100%;
+}
+
+.textInput::placeholder {
+	color: #aeaeae;
+}
+
+.formSection {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.inputFields {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.passwordSection {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.passwordWrapper {
+	border: 1px solid #ded2d9;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	width: 420px;
+	padding: 18px 10px 13px;
+}
+
+@media (width <= 991px) {
+	.passwordWrapper {
+		width: 100%;
+	}
+}
+
+@media (width <= 640px) {
+	.passwordWrapper {
+		height: 48px;
+		padding: 12px 8px;
+	}
+}
+
+.passwordInput {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #e0e0e0;
+	font: 400 10px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+	width: 100%;
+}
+
+.passwordInput::placeholder {
+	color: #e0e0e0;
+}
+
+.formOptions {
+	display: flex;
+	align-items: flex-start;
+	gap: 222px;
+}
+
+@media (width <= 640px) {
+	.formOptions {
+		gap: 100px;
+	}
+}
+
+.checkboxContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.checkboxWrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.customCheckbox {
+	position: relative;
+	width: 12px;
+	height: 12px;
+}
+
+.hiddenCheckbox {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.checkboxVisual {
+	background-color: #7f265b;
+	border: 2px solid #7f265b;
+	border-radius: 2px;
+	width: 12px;
+	height: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.checkboxLabel {
+	color: #333;
+	font: 400 14px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+	cursor: pointer;
+	margin: 0;
+}
+
+.submitButton {
+	cursor: pointer;
+	background-color: #7f265b;
+	border: none;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 13px;
+	width: 420px;
+	padding: 13px 10px 12px;
+	color: white;
+	font: 600 16px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+	transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+	background-color: #6b1f4d;
+}
+
+@media (width <= 991px) {
+	.submitButton {
+		width: 100%;
+	}
+}
+
+@media (width <= 640px) {
+	.submitButton {
+		padding: 12px 8px;
+	}
+}

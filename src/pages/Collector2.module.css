@@ -1,0 +1,188 @@
+.collector2 {
+	background-color: #eae8e1;
+	width: 100%;
+	min-height: 1655px;
+	position: relative;
+}
+
+@media (width <= 991px) {
+	.collector2 {
+		min-height: auto;
+	}
+}
+
+.backgroundImage {
+	opacity: 01;
+	object-fit: cover;
+	width: 100%;
+
+	position: absolute;
+	top: 146px;
+	left: 0;
+}
+
+@media (width <= 991px) {
+	.backgroundImage {
+		height: auto;
+		min-height: 100vh;
+	}
+}
+
+.mainContent {
+	width: 1568px;
+	height: 730px;
+	position: absolute;
+	top: 754px;
+	left: 176px;
+}
+
+@media (width <= 991px) {
+	.mainContent {
+		width: 90%;
+		height: auto;
+		top: 600px;
+		left: 5%;
+	}
+}
+
+@media (width <= 640px) {
+	.mainContent {
+		width: 95%;
+		top: 400px;
+		left: 2.5%;
+	}
+}
+
+.congratulationsSection {
+	position: absolute;
+	top: 308px;
+	left: 319px;
+}
+
+@media (width <= 991px) {
+	.congratulationsSection {
+		top: 200px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.congratulationsTitle {
+	color: #125b1b;
+	width: 594px;
+	height: 86px;
+	font: 800 96px Jost;
+	position: absolute;
+	top: 0;
+	left: 407px;
+}
+
+@media (width <= 991px) {
+	.congratulationsTitle {
+		text-align: center;
+		width: 90%;
+		font-size: 64px;
+		left: 5%;
+	}
+}
+
+@media (width <= 640px) {
+	.congratulationsTitle {
+		font-size: 48px;
+		line-height: 1.2;
+	}
+}
+
+.instructionText {
+	color: #299a36;
+	width: 840px;
+	height: 122px;
+	font: 800 36px Jost;
+	position: absolute;
+	top: 171px;
+	left: 401px;
+}
+
+@media (width <= 991px) {
+	.instructionText {
+		text-align: center;
+		width: 90%;
+		font-size: 28px;
+		left: 5%;
+	}
+}
+
+@media (width <= 640px) {
+	.instructionText {
+		font-size: 20px;
+		line-height: 1.3;
+	}
+}
+
+.emojiAnimation {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 340px;
+	height: 341px;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (width <= 640px) {
+	.emojiAnimation {
+		width: 200px;
+		height: 200px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.emojiImage {
+	width: 340px;
+	height: 341px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (width <= 640px) {
+	.emojiImage {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+.congratulationsAnimation {
+	justify-content: center;
+	align-items: center;
+	width: 257px;
+	height: 223px;
+	display: flex;
+	position: absolute;
+	top: 308px;
+	left: 1255px;
+}
+
+@media (width <= 991px) {
+	.congratulationsAnimation {
+		top: 200px;
+		left: 80%;
+	}
+}
+
+@media (width <= 640px) {
+	.congratulationsAnimation {
+		display: none;
+	}
+}
+
+.congratulationsImage {
+	width: 257px;
+	height: 223px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

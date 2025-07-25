@@ -1,0 +1,95 @@
+.radioItem {
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.radioWrapper {
+  border-radius: 8px;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.radioWrapper:hover {
+  background-color: #f5f5f5;
+}
+
+.controller {
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+}
+
+.thumb {
+  background-color: #fff;
+  border: 1px solid #616161;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.thumb.checked {
+  background-color: #21a652;
+  border-color: #21a652;
+}
+
+.icon {
+  justify-content: center;
+  align-items: center;
+  width: 2px;
+  height: 2px;
+  padding: 0.577px 0.414px 0.572px 0.415px;
+  display: flex;
+  position: relative;
+}
+
+.checkmark {
+  fill: #fff;
+  width: 12px;
+  height: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.checkmark.checked {
+  opacity: 1;
+}
+
+.label {
+  color: #616161;
+  font-variant-numeric: lining-nums tabular-nums;
+  flex: 1 0 0;
+  font: 400 16px/150% Jost;
+  position: relative;
+}
+
+@media (width <= 640px) {
+  .label {
+    font-size: 14px;
+  }
+}
+
+.hiddenInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
